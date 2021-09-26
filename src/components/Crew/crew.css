@@ -1,0 +1,107 @@
+.crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.crew p {
+  margin: 0;
+}
+.crewTitle {
+  font-size: 3rem;
+}
+
+.crewCard_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* crewCard */
+.crewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid lightgray;
+  padding-bottom: 2rem;
+  background-color: white;
+  color: black;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  height: auto;
+}
+.crewCard_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+.crewCard_img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.crewCard p {
+  margin: 0;
+}
+.crewCard_name {
+  color: #8b00cf;
+  font-size: 1.5rem;
+}
+/* CrewDescripiton */
+.CrewDescripiton {
+  display: flex;
+  background-color: white;
+  color: black;
+  padding: 3rem;
+}
+.iconItem {
+  height: 1.4rem;
+}
+.CrewDescripiton_left {
+  margin-right: 4rem;
+}
+.CrewDescripiton_left .crewCard_icons {
+  width: 80%;
+}
+.crewCardDesc_img {
+  width: 30vw;
+}
+@media only screen and (max-width: 1024px) {
+  .crewCard {
+    height: auto;
+    width: 25vw;
+  }
+  .crewCard_icons {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .crewCard_list,
+  .CrewDescripiton {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .crewTitle {
+    font-size: 2rem;
+  }
+  .crewCard_name {
+    font-size: 1.2rem;
+  }
+  .crewCard {
+    height: auto;
+    width: 100% !important;
+  }
+  .crewCardDesc_img {
+    width: 100%;
+  }
+  .CrewDescripiton {
+    padding: 1rem;
+  }
+  .CrewDescripiton_left {
+    margin-right: 0;
+  }
+}

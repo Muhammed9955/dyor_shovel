@@ -1,0 +1,39 @@
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh auto;
+}
+.description_img {
+  width: 35vw;
+  object-fit: contain;
+}
+.description_content {
+  width: 35vw;
+}
+.description_content p {
+  line-height: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .description_img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .description_content {
+    width: 100%;
+  }
+  .description_img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

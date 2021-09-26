@@ -1,0 +1,39 @@
+.faq_contianer {
+  background-image: url(../../assets/help.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.faq_contianer h1,
+p {
+  margin: 0;
+}
+.faq_contianer h1 {
+  color: #6ee8b1;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media only screen and (max-width: 1024px) {
+  .faq_contianer {
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.mainButton {
+  color: #2f0046;
+  background: #6ee8b1;
+  width: 150px;
+  padding: 1rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mainButton:hover {
+  background: #2f0046;
+  color: #6ee8b1;
+}

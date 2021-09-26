@@ -1,0 +1,62 @@
+.home_top {
+  background-image: url(../../assets/homeBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+.home_Top__body {
+  /* width: 80%; */
+  margin: auto;
+}
+/* header */
+.home_title {
+  font-size: 4rem;
+}
+.dao {
+  color: #b64ecd;
+  font-size: 5.5rem;
+  margin-left: 1rem;
+}
+.home_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+.home_headerImg {
+  width: 30vw;
+}
+
+/* home_bottom */
+.home_bottom {
+  background-color: #8b00cf;
+}
+.home_bottom_body {
+  width: 80%;
+  margin: auto;
+  padding: 10vh 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .home_top {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home_top {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home_title {
+    font-size: 2rem;
+  }
+  .dao {
+    font-size: 2.5rem;
+  }
+  .home_top {
+    height: 50vh;
+  }
+}

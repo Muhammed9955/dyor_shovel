@@ -1,0 +1,45 @@
+.Customer_Testimonial {
+  background-color: #bd00ff;
+  text-align: center;
+  padding: 2rem;
+  margin: 10vh 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.customer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  text-align: start;
+}
+.customer_msg {
+  margin-left: 2rem;
+  width: 80%;
+}
+.customer_icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+.customer_msg p {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .Customer_Testimonial {
+    padding: 5rem 0 2rem 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Customer_Testimonial {
+    padding: 6rem 0 2rem 0;
+  }
+  .customer_content {
+    flex-direction: column;
+  }
+}

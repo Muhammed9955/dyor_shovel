@@ -60,6 +60,7 @@
   height: 0;
   overflow: hidden;
   transition: 0.5s all ease-out;
+  z-index: 999;
 }
 .active {
   height: 40vh;

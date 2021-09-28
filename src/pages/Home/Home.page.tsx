@@ -12,9 +12,7 @@ import Crew from "../../components/Crew/Crew.component";
 import Subscribe from "../../components/Subscribe/Subscribe.component";
 import Footer from "../../components/Footer/Footer.component";
 
-interface Props {}
-
-const Home: React.FC<Props> = (props) => {
+const Home = () => {
   const { paragraph, img } = rightImg_description;
   const { paragraph2, img2 } = leftImg_description;
   const rightTitle = (

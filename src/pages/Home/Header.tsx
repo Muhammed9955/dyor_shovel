@@ -1,9 +1,10 @@
 import shovel from "../../assets/shovel.png";
 import Mainbutton from "../../components/MainButton/MainButton.component";
+import Mint from "../../components/Mint/Mint";
 
 interface Props {}
 
-const Header: React.FC<Props> = (props) => {
+const Header: React.FC<Props> = () => {
   return (
     <div className="home_header">
       <div className="">
@@ -12,7 +13,7 @@ const Header: React.FC<Props> = (props) => {
           access <br /> the
           <span className="dao">DAO</span>
         </p>
-        <Mainbutton text="MINT Shovel" />
+        <Mint />
       </div>
       <img src={shovel} alt="shovel" className="home_headerImg" />
     </div>

@@ -10,7 +10,15 @@
   background-position: center;
   background-size: cover;
 }
-
+.MuiDialog-container .MuiDialogTitle-root,
+.MuiDialog-container .MuiSvgIcon-root,
+.MuiDialog-container .MuiButton-label {
+  color: white !important;
+}
+.MuiMenuItem-gutters,
+.MuiListItem-gutters {
+  background-color: black;
+}
 .routes {
   display: flex;
   justify-content: space-between;

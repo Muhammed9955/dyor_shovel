@@ -97,8 +97,8 @@
   .nav_img {
     height: 100px;
   }
-  .routes p {
-    font-size: 0.9rem;
+  .navItem {
+    font-size: 0.7rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -108,8 +108,20 @@
   .nav_img {
     height: 70px;
   }
-  .routes p {
-    font-size: 0.6rem;
+  .navbar {
+    display: none;
+  }
+  .nav_mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  .nav_menu {
+    top: 5.9vh;
+  }
+  .active {
+    height: 260px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -121,5 +133,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+  }
+  .nav_menu {
+    top: 9vh;
   }
 }

@@ -15,6 +15,7 @@ const ConnectWallet = styled(WalletMultiButton)`
   background-color: transparent !important;
   font-weight: 500 !important;
   border: 1px solid gray !important;
+  height: 2.5rem;
   &:hover {
     color: rgb(110, 232, 177);
   }
@@ -52,7 +53,12 @@ const Navbar: React.FC<Props> = ({ bg }) => {
         <FiShoppingCart className="nav_icon" />
       </div>
       <div className="nav_mob">
-        <img src={shovel} alt="shovel" className="nav_mob__img" />
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img src={shovel} alt="shovel" className="nav_mob__img" />
+          <div style={{ marginLeft: "10px" }}>
+            <ConnectWallet />
+          </div>
+        </div>
         <div className="">
           <FiShoppingCart className="nav_icon" />
 

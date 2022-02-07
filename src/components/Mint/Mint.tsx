@@ -1,5 +1,3 @@
-import React from "react";
-
 import styled from "styled-components";
 
 import { useEffect, useState } from "react";
@@ -8,13 +6,13 @@ import Alert from "@material-ui/lab/Alert";
 import Countdown from "react-countdown";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
-import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
+// import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 import {
   CandyMachine,
   awaitTransactionSignatureConfirmation,
   getCandyMachineState,
   mintOneToken,
-  shortenAddress,
+  // shortenAddress,
 } from "../../utils/candy-machine";
 
 import {
@@ -71,7 +69,7 @@ const Mint = () => {
   const [isActive, setIsActive] = useState(false); // true when countdown completes
   const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
   const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
-
+  console.log(balance);
   const [alertState, setAlertState] = useState<AlertState>({
     open: false,
     message: "",
@@ -162,7 +160,7 @@ const Mint = () => {
         setBalance(balance / LAMPORTS_PER_SOL);
       }
     })();
-  }, [wallet, connection]);
+  }, [wallet]);
 
   useEffect(() => {
     (async () => {
@@ -179,7 +177,7 @@ const Mint = () => {
       setStartDate(goLiveDate);
       setCandyMachine(candyMachine);
     })();
-  }, [wallet, candyMachineId, connection]);
+  }, [wallet]);
 
   return (
     <div>

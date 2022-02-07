@@ -1,7 +1,7 @@
 import "./faq.css";
 import Footer from "../../components/Footer/Footer.component";
 import Page from "../../components/Page/Page.component";
-import help from "../../assets/help.png";
+// import help from "../../assets/help.png";
 import Card from "../../components/Card/Card.component";
 interface Props {}
 

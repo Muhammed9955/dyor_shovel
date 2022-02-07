@@ -1,5 +1,5 @@
 import "./Customer_Testimonial.css";
-import customer from "../../assets/customer.png";
+// import customer from "../../assets/customer.png";
 import icon from "../../assets/icon.svg";
 
 interface Props {

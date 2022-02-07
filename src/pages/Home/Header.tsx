@@ -1,5 +1,5 @@
 import shovel from "../../assets/shovel.png";
-import Mainbutton from "../../components/MainButton/MainButton.component";
+// import Mainbutton from "../../components/MainButton/MainButton.component";
 import Mint from "../../components/Mint/Mint";
 
 interface Props {}

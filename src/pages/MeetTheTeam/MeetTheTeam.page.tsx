@@ -1,5 +1,5 @@
 import "./meetTheTeam.css";
-import { leftImg_description } from "../../data";
+// import { leftImg_description } from "../../data";
 import Footer from "../../components/Footer/Footer.component";
 import Page from "../../components/Page/Page.component";
 import CrewDescripiton from "../../components/Crew/CrewDescripiton";
@@ -9,12 +9,12 @@ import user3 from "../../assets/user3.png";
 interface Props {}
 
 const MeetOurCrew: React.FC<Props> = () => {
-  const { paragraph2, img2 } = leftImg_description;
-  const leftTitle = (
-    <h1 style={{ fontSize: "3rem", fontWeight: "normal" }}>
-      Our <span style={{ color: "#6EE8B1" }}>Store Policies</span>{" "}
-    </h1>
-  );
+  // const { paragraph2, img2 } = leftImg_description;
+  // const leftTitle = (
+  //   <h1 style={{ fontSize: "3rem", fontWeight: "normal" }}>
+  //     Our <span style={{ color: "#6EE8B1" }}>Store Policies</span>{" "}
+  //   </h1>
+  // );
   return (
     <Page>
       <div style={{ width: "80%", margin: "auto" }}>

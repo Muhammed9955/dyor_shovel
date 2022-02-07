@@ -6,11 +6,12 @@ import MeetOurCrew from "./pages/MeetTheTeam/MeetTheTeam.page";
 import StroePolicies from "./pages/StroePolicies/StorePolicies";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Testimonials from "./pages/Testimonials/Testimonials.page";
-import React, { FC, useMemo } from "react";
+import React, { useMemo } from "react";
 import {
   WalletProvider,
   ConnectionProvider,
 } from "@solana/wallet-adapter-react";
+
 import {
   getLedgerWallet,
   getMathWallet,
@@ -22,12 +23,12 @@ import {
 } from "@solana/wallet-adapter-wallets";
 import {
   WalletDialogProvider,
-  WalletDisconnectButton,
+  // WalletDisconnectButton,
 } from "@solana/wallet-adapter-material-ui";
 
 import * as anchor from "@project-serum/anchor";
 import { clusterApiUrl } from "@solana/web3.js";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+// import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 
 export const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
@@ -41,7 +42,7 @@ export const candyMachineId = new anchor.web3.PublicKey(
   process.env.REACT_APP_CANDY_MACHINE_ID!
 );
 
-const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
+// const network = process.env.REACT_APP_SOLANA_NETWORK as WalletAdapterNetwork;
 
 const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!;
 export const connection = new anchor.web3.Connection(rpcHost);
